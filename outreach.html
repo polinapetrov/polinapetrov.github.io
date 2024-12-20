@@ -41,8 +41,39 @@
 										<a href="https://www.facebook.com/aotnashville" target="_blank">Facebook</a> pages.
 									</p>
 									
-									<h2>Tutorials</h2>
-									<p>Text here.</p>
+									<h2>PTA science tutorials</h2>
+									<p>
+										I've adapted and written a couple tutorials on continuous gravitational wave searches in PTA datasets, 
+										which you can find 
+										<a href="https://github.com/polinapetrov/pta_cw_tutorials" target="_blank">in this repository</a>. 
+										These tutorials were originally written as part of a larger set of lectures + tutorials for the 2024 
+										VIPER Summer School on PTA GW Astrophysics, which has its own larger repository
+										<a href="https://github.com/VIPER-Research-Group/gw-school-2024-materials" target="_blank">here</a>,
+										and have since been used for the NANOGrav Fall 2024 Meeting's student workshop.
+									</p>
+									<p>
+										The first tutorial aims to give users a better intuition for the CW signal, the parameters that 
+										govern it, and how pulsars respond to this signal. It also covers frequentist 
+										(<a href="https://github.com/nanograv/enterprise_extensions/tree/master/enterprise_extensions/frequentist" target="_blank">F-statistic</a>) 
+										and Bayesian MCMC searches (using both 
+										<a href="https://github.com/nanograv/PTMCMCSampler" target="_blank">PTMCMCSampler</a>
+										and 
+										<a href="https://github.com/nanograv/QuickCW" target="_blank">QuickCW</a>) 
+										for CWs in a toy dataset and uses the recovered parameters to calculate the binary system's orbital 
+										period and separation, decay timescale, and host galaxy parameters. The second tutorial picks up where
+										the first leaves off and focuses more on multi-messenger astrophysics with PTA data. Starting with the 
+										localization information obtained from the CW search, users gain experience using tools such as 
+										<a href="https://healpy.readthedocs.io/en/latest/" target="_blank">healpy</a> 
+										and 
+										<a href="https://lscsoft.docs.ligo.org/ligo.skymap/index.html#goingthedistancesupplement" target="_blank">ligo.skymap</a>.
+										The tutorial then dives into host galaxy identification, bringing together the CW localization 
+										information and NANOGrav's 
+										<a href="https://arxiv.org/abs/2101.02716" target="_blank">catalog</a> 
+										of massive galaxies in the local Universe. Functions for calculating the localization area and number
+										of potential host galaxies therein are provided. Finally, users execute example cuts on potential hosts
+										before exploring host cut approaches of their own design.
+										
+									</p>
 
 								</section>
 
