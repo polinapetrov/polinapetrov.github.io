@@ -78,7 +78,9 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #1C2E45; }
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c9d80557-9d2c-465f-a783-4f28295c9c1c/d4x5v0g-6de6bbf4-1be9-40c2-a9f6-71071873344b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9jOWQ4MDU1Ny05ZDJjLTQ2NWYtYTc4My00ZjI4Mjk1YzljMWMvZDR4NXYwZy02ZGU2YmJmNC0xYmU5LTQwYzItYTlmNi03MTA3MTg3MzM0NGIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fpimTt3iXwpcZVMggNSFygRsqGNDP1H5B1pKun4T0Nk");
+  background-repeat: repeat;
+  background-color: #1C2E45; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -111,14 +113,27 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
+  /*border-bottom: dotted 1px;*/
   color: #ffffff;
   text-decoration: none; }
   a:hover {
-    border-bottom-color: #ffffff;
-    color: #6D5A7A !important; }
+    /*border-bottom-color: #ffffff;*/
+    color: #aaaaaa !important; }
     a:hover strong {
       color: inherit; }
+
+a.cred, 
+a.cred:active, 
+a.cred:visited {
+    font-size: 10px;
+    color: #5886d0;
+    text-align: center;
+    display: block; /* Enables center alignment on inline anchor elements */
+}
+
+a.cred:hover {
+    color: #aaaaaa; /* Optional hover state color */
+}
 
 strong, b {
   color: #ffffff;
@@ -128,7 +143,15 @@ em, i {
   font-style: italic; }
 
 p {
-  margin: 0 0 2em 0; }
+  margin: 0 0 2px 0; }
+
+hr.header-line {
+    width: 100px;           /* Set variable length */
+    height: 1.75px;           /* Line thickness */
+    background-color: #aaaaaa;
+    border: none;
+    margin: 8px 0 0 0;   /* Top, Right, Bottom, Left margins (Left = 0 keeps it left-aligned) */
+}
 
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff; /* heading colors -- name, menu, contact */
@@ -227,6 +250,8 @@ hr {
 
 .align-right {
   text-align: right; }
+
+.sidebarlinks { text-align: center; margin-left: 0; }
 
 /* Row */
 .row {
@@ -998,11 +1023,11 @@ header p {
   text-transform: uppercase; }
 
 /* Bar below "menu" */
-header.major > :last-child {
-  border-bottom: solid 3px #8b89a3;
-  display: inline-block;
-  margin: 0 0 2em 0;
-  padding: 0 0.75em 0.5em 0; }
+/*header.major > :last-child {*/
+/*  border-bottom: solid 3px #8b89a3;*/
+/*  display: inline-block;*/
+/*  margin: 0 0 2em 0;*/
+/*  padding: 0 0.75em 0.5em 0; }*/
 
 header.main > :last-child {
   margin: 0 0 1em 0; }
@@ -1230,7 +1255,7 @@ input[type="radio"] + label:before {
     top: 0.25em; }
   .image.right {
     float: right;
-    padding: 0 0 1em 1.5em;
+    padding: 3px 0 3px 1em;
     top: 0.25em; }
   .image.fit {
     display: block;
@@ -1244,6 +1269,80 @@ input[type="radio"] + label:before {
     width: 100%; }
     .image.main img {
       width: 100%; }
+
+
+/* The container holding both image blocks */
+.image-container {
+    display: flex;             /* Align items in a row */
+    justify-content: center;   /* Center the items horizontally */
+    gap: 20px;                 /* Space between the two image blocks */
+    flex-wrap: wrap;           /* Stack them on small mobile screens */
+    padding: 20px;
+}
+
+/* Styling each individual image + caption block */
+.image-block {
+    margin: 0;                 /* Reset default browser figure margins */
+    text-align: center;        /* Center the caption text under the image */
+    max-width: 45%;            /* Ensure they don't overflow the page width */
+}
+
+/* Ensure images scale down cleanly if they are too large */
+.image-block img {
+    max-width: 100%;
+    height: auto;
+    display: block;            /* Prevents extra bottom whitespace gap */
+    margin-bottom: 8px;        /* Space between image and caption text */
+}
+
+
+/* Center the entire figure block on the page and prevent overflow */
+.gallery-figure {
+    margin: 0 auto;
+    max-width: 100%;            
+    text-align: center;         
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;     
+}
+
+/* Container for the single top image */
+.single-image-top {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;   
+    object-fit: contain;        /* Replaces 'cover' to prevent cropping */
+}
+
+/* Create the side-by-side row layout for the bottom two images */
+.image-row {
+    display: flex;
+    justify-content: center;    
+    align-items: center;        /* Centers items vertically if heights differ */
+    gap: 15px;                  
+    margin-bottom: 8px;         
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ensure images scale down perfectly and stay in bounds */
+.image-row img {
+    width: calc(50% - 7.5px);   /* Accounts for the 15px gap so they fit exactly 100% */
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;        /* Replaces 'cover' to prevent cutting off images */
+}
+
+/* Styling for the single shared caption (Keeping your existing styles) */
+.shared-caption {
+    font-size: 10px;            
+    color: #8b8b8b;             
+    font-family: "Inter";       
+    display: block;
+    width: 100%;
+}
+
 
 a.image {
   overflow: hidden; }
@@ -1500,7 +1599,7 @@ button,
   color: #C7C7C7 !important; /* "learn more" button text */
   cursor: pointer;
   display: inline-block;
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.8em;
   font-weight: 700;
   height: 3.5em;
@@ -2088,7 +2187,7 @@ button,
   #header .logo {
     border-bottom: 0;
     color: inherit;
-    font-family: "Roboto Slab", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.125em; }
   #header .icons {
     text-align: right; }
