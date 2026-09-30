@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polina Petrov, PhD</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="My GitHub Pages Site" />
+    
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d3e7d1d1fc.js" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        ::-webkit-scrollbar-thumb:vertical {
+            background-color: #a091bd;
+            height: 7px;
+            border-bottom: 2px solid #e8e8e8;
+            border-top: 2px solid #e8e8e8;
+        }
+        ::-webkit-scrollbar-thumb:horizontal {
+            background-color: #a091bd;
+            height: 7px!important;
+        }
+        ::-webkit-scrollbar {
+            background-color: #e8e8e8;
+            height: 7px;
+            width: 8px;
+        }
+        ::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment{
+            display: block; 
+            height: 12px;
+            background-color: #a091bd;
+        }
+
+        body {
+            font-family: 'Inter'; 
+            font-size: 16px; 
+            line-height: 130%; 
+            color: #1f1a23;
+            background-color: #f3f2ee; 
+            background-attachment: fixed; 
+            background-repeat: repeat;
+        }
+
+        b, strong { color: #927774; }
+        small { font-size: 10px; }
+
+        img { max-width: 100%; }
+        a img { border: 0; }
+
+        a, a:active, a:visited {
+            text-decoration: none; 
+            transition: 0.8s; 
+            -o-transition: 0.8s; 
+            -webkit-transition-duration: 0.8s; 
+            -moz-transition-duration: 0.8s; 
+            color: #5886d0;
+            font-size: 16px;
+        }
+
+        a:hover {
+            transition: 0.8s; 
+            -o-transition: 0.8s; 
+            -webkit-transition-duration: 0.8s; 
+            -moz-transition-duration: 0.8s; 
+            color: #ffffff;
+        }
+
+        blockquote {
+            padding: 2px 7px;
+            margin: 7px 0 3px 8px;
+            border-left: 2px solid #eaa5a1;
+            background-color: #f3f2ee;
+        }
+
+        .image { max-width: 500px; border: 0px; text-align: center; }
+        .image a { max-width: 500px; border: 0px; text-align: center; }
+
+        #menu {
+            float: left; 
+            width: 164px; 
+            margin-top: 80px; 
+            margin-left: 50px; 
+            position: fixed; 
+            padding: 2px;
+        }
+
+        #title {
+            font-family: 'Arima'; 
+            font-size: 28px;
+            font-style: none;
+            margin-left: 0; 
+            text-transform: none; 
+            line-height: 20px; 
+            padding: 5px; 
+            text-align: center; 
+            letter-spacing: 0px;
+            font-weight: bold; 
+            color: #454876;
+        }
+        #title a { text-decoration: none; color: #a19695; }
+        #title a:visited { text-decoration: none; color: #6D5A7A; }
+        #title a:hover { text-decoration: none; color: #cf9594; }
+
+        #subtitle {
+            font-family: 'Arima'; 
+            font-size: 18px;
+            font-style: none;
+            margin-left: 0; 
+            margin-top: 4px;
+            text-transform: none; 
+            line-height: 20px; 
+            padding: 0px; 
+            text-align: center; 
+            letter-spacing: 0px;
+            font-weight: 500; 
+            color: #686978;
+        }
+
+        #userpic { float: left; }
+        #userpic img { padding: 8px; background: #dfb5b2; }
+
+        #menunav { width: 160px; }
+
+        .nav {
+            float: right; 
+            margin-bottom: 2px; 
+            display: block; 
+            color: #030000;
+        }
+        .nav a {
+            width: 80px; 
+            text-decoration: none; 
+            font-size: 10px; 
+            text-align: center; 
+            padding: 3px 1px 4px 1px; 
+            font-weight: bold; 
+            display: block; 
+            margin-top: 1px; 
+            margin-bottom: 3px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            background-color: #dfb5b2; 
+            color: #ffffff !important; 
+        }
+        .nav a:visited { background-color: #dfb5b2; }
+        .nav a:hover {
+            background: #cf9594;
+            color: #ffffff !important;
+        }
+
+        #sidecontent {
+            width: 300px; 
+            position: fixed; 
+            float: left;
+            margin-left: 192px;
+        }
+
+        #sidebar {
+            text-align: left; 
+            width: 300px; 
+            padding: 20px; 
+            background-color: #e8e8e8; 
+            border-bottom: 4px solid #a091bd;
+            border-top: 4px solid #a091bd;
+        }
+
+        .sideimage { padding-bottom: 8px; text-align: center; }
+        .sideimage img { width: 300px; height: auto; }
+
+        .about {
+            padding: 1px; 
+            text-align: justify; 
+            margin-bottom: 5px; 
+            background: #ffffff;
+        }
+        
+        .sidebarlinks { margin-left: 0px; }
+        .sidebarlinks a {
+            height: 30px;
+            line-height: 30px; /* Must match the height exactly */
+            width: 120px; 
+            font-family: 'Inter';
+            font-size: 15px; 
+            font-weight: 550; 
+            text-align: center;
+            padding: 0;
+            display: inline-block;
+            /*display: flex;*/
+            /*justify-content: center;*/ /*centers boxes horizontally*/
+            /*align-items: center;*/ /*centers boxes vertically*/
+            margin-top: 10px; 
+            margin-bottom: 2px; 
+            text-transform: none; 
+            letter-spacing: 0.5px; 
+            background-color: #ffffff; 
+            color: #5f63a1; 
+        }
+        .sidebarlinks a:hover { background: #d3c9ea; }
+
+        #entries {
+            width: 700px; 
+            margin-top: 25px; 
+            text-align: justify;
+            margin-left: 638px; 
+        }
+
+        .posts {
+            width: 700px; 
+            background-color: #e8e8e8;
+            padding: 20px; 
+            border-bottom: 4px solid #a091bd;
+            border-top: 4px solid #a091bd;
+            word-wrap: break-word;
+        }
+
+        .info {
+            width: 522px; 
+            margin-left: 0px; 
+            padding: 3px 5px 4px 5px; 
+            font-size: 10px; 
+            text-align: right; 
+            text-transform: uppercase;
+            color: #927774;
+        }
+
+        h1 {
+            font-family: 'Arima'; 
+            font-size: 22px;  
+            line-height: 105%; 
+            font-weight: none; 
+            font-style: none; 
+            letter-spacing: 0px; 
+            color: #505382;
+            text-align: center;
+            /*margin-top: 4px;*/
+        }
+        /*h1:first-letter { font-size: 130%; color: #c9413e; }*/
+
+        #clear {
+            width: 300px;
+            height: 10px; 
+            clear: both; 
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="sidecontent">
+        <div id="sidebar">
+            <div class="sideimage">
+                <img src="images/pfp6.JPG" align="center" alt="Polina's profile picture."/>
+            </div>
+
+            <div id="title">Polina Petrov, PhD</div>
+            <div id="subtitle">Multi-messenger astrophysicist</div>
+            <!--<div class="about">
+                <p>Multi-messenger astrophysicist.
+                </p>
+            </div>-->
+            
+            <div style="height: 8px;"></div>
+            <div class="sidebarlinks">
+                <a href="index_t.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about_t.html"><i class="fa-solid fa-user"></i> About me</a>
+                <a href="research_t.html"><i class="fa-solid fa-moon"></i> Research</a>
+                <a href="outreach_t.html"><i class="fa-solid fa-seedling"></i> Outreach</a>
+                <a href="cv_t.html"><i class="fa-solid fa-file-lines"></i> CV</a>
+                <a href="contact_t.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </div>
+            <br>
+            <div>
+                <a href="https://www.tumblr.com/doucheywolf" class="cred">
+                HTML theme credit
+                </a>
+                <a href="https://www.deviantart.com/cerbysaurusrex/art/Pixel-star-Background-297565504" class="cred">
+                Background image credit
+                </a>
+            </div>
+
+        </div> 
+    </div>
+
+    <div id="entries">
+        <div class="posts">
+            <a href="#" class="title">
+                <h1>About me</h1>
+                <hr class="header-line">
+            </a>
+            <p><br>
+                <span class="image right" style="text-align: center;">
+                <img src="images/pfp5.jpg" alt="Polina at AAS 243 in New Orleans." />
+                <span style="display: block; color: #8b8b8b; font-size: 12px; margin-top: 8px;">
+                    AAS 243, New Orleans, LA
+                </span>
+                </span>
+                I grew up in the South Hills suburbs of Pittsburgh, Pennsylvania
+                and feel that I naturally carry some uniquely Pittsburgh traits — 
+                a love of pickles, “pop” over “soda”, and time spent as part of a 
+                junior Tamburitzans group, to name a few.
+                
+                <br><br>Deciding to staying in Pittsburgh for my undergraduate years, 
+                I worked on astrophysics research projects with a number of 
+                different groups and collaborators while earning by BS in Physics 
+                at Carnegie Mellon University. I first worked on stellar multiplicity 
+                at the University of Pittsburgh, but then developed a more specific interest 
+                in multi-messenger astrophysics as I studied binary neutron stars and 
+                neutron star-black hole binaries seen by LIGO via the University of Minnesota’s 
+                REU program. I enjoyed working on gravitational waves (GWs) and 
+                multi-messenger astrophysics (MMA) so much that, simultaneously 
+                at my home institution, I was exploring these topics on a larger scale, 
+                learning about massive black hole binaries and making predictions for 
+                future gravitational wave detections with LISA. 
+                
+                <br><br>After graduating from Carnegie Mellon in 2021, I moved to 
+                Nashville, Tennessee to start my PhD in Astrophysics at 
+                Vanderbilt University. Since then, I've become a member of NANOGrav 
+                and have been working on my thesis research, which concerns 
+                supermassive black hole binaries, the GWs we can detect from them 
+                using pulsar timing arrays, and MMA opportunities for these systems. 
+                If you're interested in learning more about the work I do and 
+                my publications, check out my research page for more details.
+                </p>
+        </div>
+
+        <div class="posts">
+            <a href="#" class="title">
+                <h1>Outside of academia</h1>
+                <hr class="header-line">
+            </a>
+            <p><br>I’ve always enjoyed exploring different artistic endeavors, 
+                which have ranged from dancing to drawing & painting to video editing.
+            
+            <br><br>Dance has particularly been my constant through life, my favorite 
+            artistic outlet and stress reliever rolled into one hobby. I’ve been dancing 
+            for 15+ years and have experience in multiple genres, including ballet, jazz,
+             contemporary, hip hop, tap, musical theater, and heels. You can find some 
+             dances I’ve performed in during my undergrad career 
+             <a href="https://www.youtube.com/playlist?list=PLWLdRantolQSZvWUhlDLH2bawK6nply_P" target="_blank">here</a>. 
+             Creating original 
+             choreography is something I’ve played with a lot more in recent years; a few 
+             pieces I’ve choreographed live 
+             <a href="https://www.youtube.com/playlist?list=PLWLdRantolQSqomtj-5y24TAars2RKxrU" target="_blank">here</a>.
+
+            <!--<div class="image left"><img src="images/dance_pic1.jpg" alt="" /><figcaption style="color: #8b8b8b; font-size: 12px;">Percy Warner Park, Nashville</figcaption></div>
+			<div class="image left"><img src="images/dance_pic4.JPEG" alt="" /><figcaption style="color: #8b8b8b; font-size: 12px;">Vitality Dance Co Fall 2022 show</figcaption></div>-->
+
+            <div class="image-container">
+            <figure class="image-block">
+                <img src="images/dance_pic1.jpg" alt="Vitality Dance Company Fall 2021 photoshoot.">
+                <figcaption style="color: #8b8b8b; font-size: 12px;">
+                    Percy Warner Park, Nashville, TN
+                </figcaption>
+            </figure>
+            <figure class="image-block">
+                <img src="images/dance_pic4.JPEG" alt="Vitality Dance Company Fall 2022 show.">
+                <figcaption style="color: #8b8b8b; font-size: 12px;">
+                    Vitality Dance Co Fall 2022 show, Nashville, TN
+                </figcaption>
+            </figure>
+            </div>
+            </p>
+
+            <p>
+            I also love to travel, and thanks to my brother who edits commercials 
+            and documentaries professionally, sometimes I'm inspired to edit together little 
+            music videos encapsulating my trips. You can find some videos I've made
+            <a href="https://www.youtube.com/playlist?list=PLWLdRantolQTsPd8YLTBS4ETyPqxSuqa0" target="_blank">here</a>. 
+            <!--and photos of other recent travels
+            <a href="" >here</a>.-->
+            </p>
+
+            <p>
+            <!--<span class="image left"><img src="images/sequoia.JPG" alt="" /><figcaption style="color: #8b8b8b; font-size: 12px;">Sequoia National Park, California</figcaption></span>-->
+            <div class="image-container">
+            <figure class="image-block">
+                <img src="images/sequoia.jpg" alt="">
+                <figcaption style="color: #8b8b8b; font-size: 12px;">
+                    Sequoia National Park, CA
+                </figcaption>
+            </figure>
+            <figure class="image-block">
+                <img src="" alt="">
+                <figcaption style="color: #8b8b8b; font-size: 12px;">
+                </figcaption>
+            </figure>
+            </div>
+
+            </p>
+        </div>
+        
+        <!--<div class="info">
+            shared <a>August 4, 2026</a>
+            <br>
+            <div class="tags">
+                X <a>github-pages</a> X <a>web-design</a>
+            </div>
+        </div>-->
+
+        <!-- <div id="clear"></div><br/><br/> --> 
+        <!-- END OF SAMPLE POST -->
+    </div>
+</body>
+</html>
